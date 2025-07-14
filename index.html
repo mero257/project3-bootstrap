@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid my-background p-0 m-0">
+        <nav class="navbar navbar-expand-md fixed-top nnav bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/011af133-df27-4ff2-8512-a48a312e06de.png" class="img1" alt="Logo" width="50">
+                    <img src="img/egypt_logo_cleaned.png" class="img1" alt="Logo" width="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="Link">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle custom-link trips-link" href="Trips"
+                                data-toggle="dropdown"><span>T</span>rips</a>
+                            <div class="dropdown-menu div-drop">
+                                <a class="dropdown-item text-primary" href="">GIZA</a>
+                                <a class="dropdown-item text-primary" href="">ALEX</a>
+                                <a class="dropdown-item text-primary" href="">LUXOR</a>
+                                <a class="dropdown-item text-primary" href="">ASWAN</a>
+                                <a class="dropdown-item text-primary" href="">SHARM EL SHIKH</a>
+                                <a class="dropdown-item text-primary" href="">EL GLALA</a>
+                                <a class="dropdown-item text-primary" href="">MORE...</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="About">About</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline ml-auto">
+                        <input class="form-control mr-sm-2 inp" type="text" placeholder="Search">
+                        <button class="btn btn-primary mr-sm-2 btn" type="submit">Search</button>
+                        <button type="button" class="btn btn-primary btn" data-toggle="modal"
+                            data-target="#myModal">Login</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-light">
+                        <h5 class="modal-title">Login</h5>
+                        <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="container form-group1 text-primary">
+                        <label for="usr">Email address:</label>
+                        <input type="email" class="form-control" id="usr">
+                        <p class="text-dark">We'll never share your email with anyone else</p>
+                    </div>
+                    <div class="container form-group text-primary">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <form class="input ml-3">
+                        <div class="custom-control custom-switch text-primary">
+                            <input type="checkbox" class="custom-control-input" id="switch1">
+                            <label class="custom-control-label" for="switch1">Remmember me</label>
+                        </div>
+                    </form>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-primary log" data-dismiss="modal">Login</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/giza-pyramid-EGYPTSECRETS1016-617b2b1b23dd4fd38bc9f365af7235ab.jpg" alt="Los Angeles">
+                    <div class="carousel-caption-custom">
+                        <h1 class="text-warning">GIZA</h1>
+                        <p>One of the Seven Wonders of the World.</p>
+                        <button class="btn btn-primary">Visit Us</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/photo-1594808816834-f716b56c4fc6.jpeg" alt="Chicago">
+                    <div class="carousel-caption-custom">
+                        <h1 class="text-warning">ALEX</h1>
+                        <p>Alexandria is the second largest city in Egypt and the largest city on the Mediterranean
+                            coast.
+                        </p>
+                        <button class="btn btn-primary">Visit Us</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/luxor_temple.jpg" alt="New York">
+                    <div class="carousel-caption-custom">
+                        <h1 class="text-warning">LUXOR</h1>
+                        <p>Luxor is one of Egypt's largest and best-preserved temples.</p>
+                        <button class="btn btn-primary">Visit Us</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Aswan+at+sunset-1920w.webp" alt="New York">
+                    <div class="carousel-caption-custom">
+                        <h1 class="text-warning">ASWAN</h1>
+                        <p>Aswan is a busy market and tourist centre located just north of the Aswan Dam on the east
+                            bank of
+                            the Nile at the first cataract.</p>
+                        <button class="btn btn-primary">Visit Us</button>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <div class=" icons">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="card c ">
+        <div class="card-body">
+            <h3 class="card-title w_color">WELCOME</h3>
+            <p class="card-text text-dark">
+                Are you planning to visit Egypt?
+                We offer the ultimate tour in Egypt,
+                covering Cairo, alex. From a one day trip to a 10 day
+                dream vacation, we will take care of all your needs: hotels. 24/7 Customer Service.
+            </p>
+            <button type="button" class="btn btn-dark text-lg-right">Learn more</button>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="card-group cc">
+        <div class="card bg_c py-4">
+            <div class="card-body text-center">
+                <p class="card-text">Popular destinations in Egypt</p>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////accordion/////////////////////////////////////////////////////////////////// -->
+    <div id="accordion">
+        <div class="card card-shadow-bottom">
+            <div class="card-header">
+                <a class="card-link card_link" data-toggle="collapse" href="#collapseOne">
+                    GIZA CITY
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body ">
+                    Lorem ipsum..
+                </div>
+            </div>
+        </div>
+        <div class="card card-shadow-bottom">
+            <div class="card-header">
+                <a class="collapsed card-link card_link" data-toggle="collapse" href="#collapseTwo">
+                    LUXOR CITY
+                </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum..
+                </div>
+            </div>
+        </div>
+        <div class="card card-shadow-bottom">
+            <div class="card-header">
+                <a class="collapsed card-link card_link" data-toggle="collapse" href="#collapseThree">
+                    SINAL PENINSULA
+                </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum..
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////translate-sections/////////////////////////////////////////////////////////////////// -->
+    <div class="card-group">
+        <div class="card card_c">
+            <div class="card-body text-center">
+                <p class="card-text ">Translate From Arabic To English</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg_color">
+        <h4>Write and Translate <span>Press Here..</span></h4>
+        <button type="button" class="btn btn-outline-primary " data-toggle="popover" data-placement="right"
+            data-content="copy to"><span title="Header" data-toggle="popover" data-trigger="hover"
+                data-content="Some content">Copy</span></button>
+        <textarea class="form-control" rows="5" id="comment" placeholder="translate"></textarea>
+    </div>
+    <div class="card-group">
+        <div class="card card_c">
+            <div class="card-body text-center">
+                <p class="card-text ">Translate From Arabic To French</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg_color">
+        <h4>Write and Translate <span>Press Here..</span></h4>
+        <button type="button" class="btn btn-outline-primary" data-toggle="popover" data-placement="right"
+            data-content="copy to"><span title="Header" data-toggle="popover" data-trigger="hover"
+                data-content="Some content">Copy</span></button>
+        <textarea class="form-control" rows="5" id="comment" placeholder="translate"></textarea>
+    </div>
+    <div class="card-group">
+        <div class="card card_c">
+            <div class="card-body text-center">
+                <p class="card-text ">Translate From Arabic To Germen</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg_color">
+        <h4>Write and Translate <span>Press Here..</span></h4>
+        <button type="button" class="btn btn-outline-primary" data-toggle="popover" data-placement="right"
+            data-content="copy to"><span title="Header" data-toggle="popover" data-trigger="hover"
+                data-content="Some content">Copy</span></button>
+        <textarea class="form-control" rows="5" id="comment" placeholder="translate"></textarea>
+    </div>
+    <div class="container-fluid img">
+    </div>
+    <div class="card-group">
+        <div class="card card_cc">
+            <div class="card-body text-center card_body">
+                <p class="card-text ">POPULAR DESTINATIONS IN EGYPT</p>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////cards-area/////////////////////////////////////////////////////////////////// -->
+    <div class="row cards">
+        <div class="col-sm-4 m_a">
+            <div class="card cards_size" style="width:350px">
+                <img class="card-img-top" src="img/card1.webp" alt="Card image">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Know More</a>
+                    <h4 class="card-title p">CAIRO</h4>
+                    <p class="card-text text-muted p">Cairo is the heart of Egypt — where history, culture, and energy
+                        meet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 m_a">
+            <div class="card cards_size" style="width:350px">
+                <img class="card-img-top" src="img/card5.jpg" alt="Card image">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Know More</a>
+                    <h4 class="card-title p">AL-QANATER</h4>
+                    <p class="card-text text-muted p">Al-Qanater is famous for its Nile river bridges.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 m_a">
+            <div class="card cards_size" style="width:350px">
+                <img class="card-img-top" src="img/card9.jpg" alt="Card image">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Know More</a>
+                    <h4 class="card-title p">AL-QALEA</h4>
+                    <p class="card-text text-muted p">The Citadel showcases Ayyubid military architecture proudly.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 m_a">
+            <div class="card cards_size" style="width:350px">
+                <img class="card-img-top" src="img/card6.jpg" alt="Card image">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Know More</a>
+                    <h4 class="card-title p">MARSA-ALAM</h4>
+                    <p class="card-text text-muted p">Marsa Alam has stunning coral reefs and beaches.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 m_a">
+            <div class="card cards_size" style="width:350px">
+                <img class="card-img-top" src="img/card3.jpg" alt="Card image">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Know More</a>
+                    <h4 class="card-title p">ASWAN</h4>
+                    <p class="card-text text-muted p">Aswan offers peaceful Nile views and ancient temples.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 m_a">
+            <div class="card cards_size" style="width:350px">
+                <img class="card-img-top" src="img/card4.webp" alt="Card image">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Know More</a>
+                    <h4 class="card-title p">ALEXANDRIA</h4>
+                    <p class="card-text text-muted p">Alexandria blends sea views with Greco-Roman history.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 m_a">
+            <div class="card cards_size" style="width:350px">
+                <img class="card-img-top" src="img/card7.jpg" alt="Card image">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Know More</a>
+                    <h4 class="card-title p">AL-ALAMEN</h4>
+                    <p class="card-text text-muted p">New Alamen is Egypt's modern coastal gem - smart, stylish, and
+                        rising.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 m_a">
+            <div class="card cards_size" style="width:350px">
+                <img class="card-img-top" src="img/card8.jpg" alt="Card image">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Know More</a>
+                    <h4 class="card-title p">Al-MOEZ</h4>
+                    <p class="card-text text-muted p">Al-Muizz is a street full of Islamic heritage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid img2">
+    </div>
+    <div class="card-group mt-5">
+        <div class="card card_cc">
+            <div class="card-body text-center card_body">
+                <p class="card-text ">THANKS FOR</p>
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////persons/////////////////////////////////////////////////////////////////// -->
+    <div class="row person">
+        <div class="col-sm-4">
+            <div class="card" style="width:360px">
+                <img class="card-img-top" src="img/p1.avif" alt="Card image">
+                <div class="bg"></div>
+                <div class="card-img-overlay">
+                    <h4 class="card-title p">All thanks and appreciation</h4>
+                    <p class="card-text p"><i class="fa-regular fa-clock"></i> October 15, 2020</p>
+                    <div class="container mt-3 img-c ">
+                        <img src="img/p1.avif" class="rounded-circle"
+                            style="width: 100px; height: 150px; object-fit: cover;">
+                        <h2>MOHAMED</h2>
+                        <p>Director of UI/UX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width:360px">
+                <img class="card-img-top" src="img/p2avif.avif" alt="Card image">
+                <div class="bg"></div>
+                <div class="card-img-overlay">
+                    <h4 class="card-title p">All thanks and appreciation</h4>
+                    <p class="card-text p"><i class="fa-regular fa-clock"></i> October 15, 2020</p>
+                    <div class="container mt-3 img-c ">
+                        <img src="img/p2avif.avif" class="rounded-circle"
+                            style="width: 100px; height: 150px; object-fit: cover;">
+                        <h2>YASSER</h2>
+                        <p>Director of UI/UX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 ">
+            <div class="card " style="width:360px">
+                <img class="card-img-top" src="img/p3.jpg" alt="Card image">
+                <div class="bg"></div>
+                <div class="card-img-overlay">
+                    <h4 class="card-title p">All thanks and appreciation</h4>
+                    <p class="card-text p"><i class="fa-regular fa-clock"></i> October 15, 2020</p>
+                    <div class="container mt-3 img-c ">
+                        <img src="img/p3.jpg" class="rounded-circle"
+                            style="width: 100px; height: 150px; object-fit: cover;">
+                        <h2>PAVLY</h2>
+                        <p>Director of UI/UX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////cards-media/////////////////////////////////////////////////////////////////// -->
+    <div class="container mt-3 cd">
+        <h2 class="text-center h">EYGPT NEWS</h2>
+        <div class="media border p-0 media_r">
+            <div class="media-body">
+                <h2>Podcast title</h2>
+                <p><i class="fa-solid fa-calendar-days"></i> mon,may 28th 2020</p>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem esse alias,
+                    earum repudiandae debitis vel ipsum porro ratione veritatis rem quas nemo aspernatur hic ea deserunt
+                    nobis recusandae dolores
+                    culpa natus eius? Sunt quod non, magni quis harum nobis laudantium dignissimos ut minima ab corrupti
+                    repudiandae iusto
+                    perspiciatis placeat obcaecati accusantium illum sapiente quas. Voluptatibus tempora quas reiciendis
+                    ducimus
+                    , aperiam nisi vel et. Repellendus itaque architecto consectetur veritatis delectus culpa.
+                </p>
+                <div class="btn-group mt-5">
+                    <button type="button" class="btn btn-primary mr-2">
+                        <i class="fa-solid fa-tag"></i>
+                        Podcast
+                    </button>
+                    <button type="button" class="btn btn-primary mr-2">
+                        <i class="fa-solid fa-clock"></i>
+                        55 mins
+                    </button>
+                    <button type="button" class="btn btn-primary mr-2">
+                        <i class="fa-solid fa-play"></i>
+                        Play Episode
+                    </button>
+                </div>
+            </div>
+            <div class="media-img-r">
+                <img src="img/card4.webp" alt="John Doe" class="ml-0 mt-0" style="width:360px; height: 400px;">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="media border p-0 media_l">
+            <div class="media-img-l ">
+                <img src="img/card3.jpg" alt="John Doe" class="mr-0 mt-0 " style="width:360px; height: 400px;">
+            </div>
+            <div class="media-body">
+                <h2>Podcast title</h2>
+                <p><i class="fa-solid fa-calendar-days"></i> mon,may 28th 2020</p>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nemo culpa, libero exercitationem
+                    asperiores vel, minus tempora, quaerat similique voluptas reiciendis dolor fugiat? Soluta et eum
+                    fuga. Voluptas dolorem molestiae perspiciatis quo magnam praesentium distinctio libero sit illo,
+                    exercitationem iste esse rerum neque corrupti! Beatae ipsa necessitatibus praesentium nam doloribus?
+                    Molestiae voluptatibus, eveniet at nostrum id
+                </p>
+                <div class="btn-group mt-5">
+                    <button type="button" class="btn btn-primary mr-2">
+                        <i class="fa-solid fa-tag"></i>
+                        Podcast
+                    </button>
+                    <button type="button" class="btn btn-primary mr-2">
+                        <i class="fa-solid fa-clock"></i>
+                        55 mins
+                    </button>
+                    <button type="button" class="btn btn-primary mr-2">
+                        <i class="fa-solid fa-play"></i>
+                        Play Episode
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="media border p-0 media_r">
+            <div class="media-body">
+                <h2>Podcast title</h2>
+                <p><i class="fa-solid fa-calendar-days"></i> mon,may 28th 2020</p>
+                <div class="line"></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem officia minima tenetur porro vitae
+                    dolore aliquid, assumenda exercitationem unde doloribus minus quia iusto fugit perspiciatis at in
+                    fuga quos ut reprehenderit. Saepe nobis nisi deleniti odio nihil unde impedit dolorum repudiandae
+                    facere dolorem, non ratione, possimus corporis beatae exercitationem ad iusto dolor corrupti eos
+                    culpa accusantium praesentium? Possimus molestiae aut sit! Quae sapiente explicabo sunt aut
+                    veritatis pariatur libero officia.
+                </p>
+                <div class="btn-group mt-5">
+                    <button type="button" class="btn btn-primary mr-2">
+                        <i class="fa-solid fa-tag"></i>
+                        Podcast
+                    </button>
+                    <button type="button" class="btn btn-primary mr-2">
+                        <i class="fa-solid fa-clock"></i>
+                        55 mins
+                    </button>
+                    <button type="button" class="btn btn-primary mr-2">
+                        <i class="fa-solid fa-play"></i>
+                        Play Episode
+                    </button>
+                </div>
+            </div>
+            <div class="media-img-r">
+                <img src="img/card9.jpg" alt="John Doe" class="ml-0 mt-0" style="width:360px; height: 400px;">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3 ">
+        <div class="media border p-0 media_l">
+            <div class="media-img-l">
+                <img src="img/card6.jpg" alt="John Doe" class="mr-0 mt-0" style="width:360px; height: 400px;">
+            </div>
+            <div class="media-body">
+                <h2>Podcast title</h2>
+                <p><i class="fa-solid fa-calendar-days"></i> mon,may 28th 2020</p>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim consequuntur omnis quidem ad at optio
+                    aspernatur odit eos quas accusamus delectus, nam dignissimos magni ea praesentium ipsa id quod
+                    magnam esse aliquid labore, illo distinctio? Iure voluptas, quaerat illum assumenda vel eaque
+                    dolorum corporis quas libero id aliquam commodi expedita sint dolorem dolore, harum animi incidunt
+                    et illo magni consequuntur. Sit, dolor. Explicabo sapiente excepturi, illo fugiat harum asperiores
+                    maxime?
+                </p>
+                <div class="btn-group mt-5">
+                    <button type="button" class="btn btn-primary mr-2">
+                        <i class="fa-solid fa-tag"></i>
+                        Podcast
+                    </button>
+                    <button type="button" class="btn btn-primary mr-2">
+                        <i class="fa-solid fa-clock"></i>
+                        55 mins
+                    </button>
+                    <button type="button" class="btn btn-primary mr-2">
+                        <i class="fa-solid fa-play"></i>
+                        Play Episode
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////media/////////////////////////////////////////////////////////////////// -->
+    <div class="container s_media mb-5">
+        <h1 class="text-center">JOIN US</h1>
+        <div class="row">
+            <div class="col-ms-12 d mb-4">
+                <p class="text-center pp mt-4">Subscribe Now</p>
+                <img src="img/youtube.jpg" alt="">
+                <a href="." class="text-center d-block pp mt-4 link">Go To Link</a>
+            </div>
+            <div class="col-ms-12 d mb-4">
+                <p class="text-center pp mt-4">Watch vedios</p>
+                <img src="img/WhatsApp Image 2025-07-14 at 16.33.24_9aeb1e80.jpg" alt="" class="immg">
+                <a href="." class="text-center d-block pp mt-4 link">Go To Link</a>
+            </div>
+            <div class=" col-ms-12 d mb-4">
+                <p class="text-center pp mt-4">Link the page</p>
+                <img src="img/likid.jpg" alt="">
+                <a href="." class="text-center d-block pp mt-4 link">Go To Link</a>
+            </div>
+            <div class=" col-ms-12 d mb-4">
+                <p class="text-center pp mt-4">Follow</p>
+                <img src="img/WhatsApp.jpg" alt="">
+                <a href="." class="text-center d-block pp mt-4 link">Go To Link</a>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////footer///////////////////////////////////////////////////////////////////// -->
+    <div class="container-fluid footer ">
+        <div class="row ">
+            <div class="col m-3 d-flex d justify-content-center">
+                <img src="img/egypt-logo-png_seeklogo-529030.png" alt="">
+                <p class="mt-5 ml-3">Good Company</p>
+            </div>
+            <div class="col m-3 d-flex d justify-content-center">
+                <img src="img/egypt-logo-png_seeklogo-529030.png" alt="">
+                <p class="mt-5 ml-3">Important Links</p>
+            </div>
+            <div class="col m-3 d-flex d justify-content-center">
+                <img src="img/egypt-logo-png_seeklogo-529030.png" alt="">
+                <p class="mt-5 ml-3">Vision</p>
+            </div>
+        </div>
+        <div class="row text-center row_md">
+            <div class="col m-3 d2 ">
+                <p class="mb-3">Tel:000-000-000</p>
+                <p class="mb-3">AdressEGYPT</p>
+                <p class="mb-3">Fax:000-000-000</p>
+            </div>
+            <div class="col m-3 d2 ">
+                <a href="." class="d-block mb-3">Visit Us</a>
+                <a href="." class="d-block mb-3">Take alook</a>
+                <a href="." class="d-block mb-3">Our Group</a>
+            </div>
+            <div class="col m-3 d2 ">
+                <p>Serveices for all</p>
+                <p>Provide best serveices</p>
+                <p>you will be better than before</p>
+            </div>
+        </div>
+        <div class="container-fluid text-center last pt-4 pb-3">
+            <p>COPYRIGHT &copy; 2025 MARIAM-AHMED(EL-NAQASHA) , GOOD ACADEMY , ALL RIGHT.</p>
+        </div>
+    </div>
+
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+
+</html>
