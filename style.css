@@ -3,14 +3,12 @@
     --main-color: #954C2E;
     --sec-color: #EFE4D2;
     --two-color: linear-gradient(to top, #1a72f7, #ff5a5a);
-
     ;
 }
 
 .btn {
     background-color: var(--color-btn) !important;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +16,7 @@
 }
 
 .navbar {
-    background-color: hsla(0, 0%, 100%, 0.6);
-    /* opacity: 0.6; */
+    background-color: hsla(0, 0%, 100%, 0.3);
     max-height: 80px;
     z-index: 1000000;
 }
@@ -128,9 +125,9 @@ i {
 
 @media (max-width: 768px) {
     .icons {
-        top: auto;
+        align-items: center;
         bottom: 10px;
-        right: 10px;
+        right: -10px;
         flex-direction: row;
     }
 
@@ -450,6 +447,8 @@ textarea {
         display: flex;
         flex-direction: column !important;
         text-align: center;
+        overflow-y: auto;
+        max-height: 100vh;
     }
 
     .media-img-l,
@@ -459,7 +458,10 @@ textarea {
         clip-path: none !important;
         height: 230px;
     }
-
+    .line{
+        margin: auto;
+        margin-bottom: 10px;
+    }
     .media_l img,
     .media_r img {
         width: 100% !important;
@@ -471,8 +473,12 @@ textarea {
 
     .media-body {
         padding: 15px;
+        height: auto;
+        overflow-y: auto; /* تمكين التمرير للنص فقط */
+        max-height: 300px; /* تحديد ارتفاع مناسب للنص */
     }
 }
+
 
 .c {
     box-shadow: 0 10px 30px hsl(0, 0%, 0%, 0.2);
@@ -577,5 +583,3 @@ textarea {
     text-decoration: underline;
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
 }
-
-
