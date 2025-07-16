@@ -7,7 +7,8 @@
 }
 
 .mn_w{
-    min-width: 300px;
+    min-width: 320px;
+    
 }
 .btn {
     background-color: var(--color-btn) !important;
@@ -339,6 +340,7 @@ textarea {
 .person .card {
     margin: auto;
     height: 460px;
+    max-width: 350px;
     margin-bottom: 90px;
     margin-top: 40px;
     border-radius: 20px;
@@ -367,9 +369,9 @@ textarea {
     z-index: 1000;
     position: absolute;
     height: 460px;
-    width: 300px;
     border-radius: 20px;
     transition: 0.9s;
+    max-width: 350px;
 }
 
 .person .card .p {
@@ -473,7 +475,7 @@ textarea {
         text-align: center;
         overflow-y: auto;
         max-height: 100vh;
-        min-width: 300px;
+        min-width: 290px;
     }
 
     .media-img-l,
