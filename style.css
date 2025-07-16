@@ -6,6 +6,9 @@
     ;
 }
 
+.mn_w{
+    min-width: 300px;
+}
 .btn {
     background-color: var(--color-btn) !important;
 }
@@ -165,8 +168,10 @@ i {
     font-weight: bold;
 }
 
-.cc {
+.cc, .c {
     margin-bottom: 20px;
+    margin-top: 20px;
+    min-width: 300px;
 }
 
 .card_link {
@@ -188,7 +193,9 @@ i {
     font-weight: bold;
     margin-top: 30px;
 }
-
+#accordion .card{
+    min-width: 300px;
+}
 .bg_color {
     background-color: var(--sec-color);
     padding-bottom: 25px;
