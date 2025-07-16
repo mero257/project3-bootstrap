@@ -449,7 +449,7 @@ textarea {
         text-align: center;
         overflow-y: auto;
         max-height: 100vh;
-        min-width: 48vh;
+        min-width: 46vh;
     }
 
     .media-img-l,
