@@ -239,6 +239,9 @@ textarea {
 
 .m_a .card {
     margin: auto;
+    /* width: 350px; */
+    max-width: 350px;
+    min-width: 300px;
     height: 530px;
     margin-top: 50px;
     border-radius: 10px;
@@ -268,6 +271,13 @@ textarea {
     opacity: 0.3;
     border-radius: 10px;
     transition: 0.7s;
+}
+
+@media (max-width: 810px) {
+    .m_a .card {
+        min-width: 300px;
+        
+    }
 }
 
 .m_a .card::before {
@@ -312,7 +322,7 @@ textarea {
     background-position: center;
     margin-top: 40px;
 }
-
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 .person {
     margin: auto;
     position: relative;
@@ -350,7 +360,7 @@ textarea {
     z-index: 1000;
     position: absolute;
     height: 460px;
-    width: 360px;
+    width: 300px;
     border-radius: 20px;
     transition: 0.9s;
 }
@@ -358,6 +368,13 @@ textarea {
 .person .card .p {
     z-index: 30000;
     position: relative;
+}
+
+@media (max-width: 700px) {
+    .person .card {
+        min-width: 300px;
+    }
+
 }
 
 .person .card .img-c {
