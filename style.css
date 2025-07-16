@@ -437,12 +437,11 @@ textarea {
     transition: 0.8s;
     min-height: 300px;
 }
-
 .media:hover img {
     transform: scale(1.06);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 810px) {
     .media {
         display: flex;
         flex-direction: column !important;
