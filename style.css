@@ -507,7 +507,7 @@ textarea {
     }
 }
 
-@media (max-width:290px) {
+@media (max-width:500px) {
     .media-body {
         display: flex;
         flex-direction: column;
