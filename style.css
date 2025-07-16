@@ -127,7 +127,7 @@ i {
     .icons {
         align-items: center;
         bottom: 10px;
-        right: -10px;
+        right: 10px;
         flex-direction: row;
     }
 
@@ -449,6 +449,7 @@ textarea {
         text-align: center;
         overflow-y: auto;
         max-height: 100vh;
+        min-width: 55vh;
     }
 
     .media-img-l,
