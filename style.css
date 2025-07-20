@@ -140,7 +140,24 @@
     height: 100vh;
     width: 100%;
     object-fit: cover;
+    
 }
+
+.carousel-caption-custom {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 1; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 750px;
+    max-width: 80%;
+}
+
 
 .carousel-item {
     position: relative;
@@ -194,9 +211,9 @@ i {
     .icons {
         top: auto;
         align-items: center;
-        bottom: 4px;
-
-        right: 1px;
+        
+        bottom: -15px !important;
+        right: 0 !important;
         flex-direction: row;
     }
 
@@ -206,6 +223,9 @@ i {
 
     .icons .nav-item {
         margin-right: 10px;
+    }
+    #accordion .card-header{
+        max-height: 500px;
     }
 }
 
@@ -260,6 +280,7 @@ i {
 }
 #accordion .card{
     min-width: 300px;
+
     font-size: large;
 }
 .bg_color {
@@ -680,4 +701,11 @@ textarea {
 .footer a:hover{
     text-decoration: underline;
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+
+.nav-egypt{
+    background: linear-gradient(to top, #1a72f7, #ff5a5a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
