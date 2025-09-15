@@ -51,20 +51,22 @@
     z-index: 1000000;
 }
 
-.nnav{
-    background-color:#efe4d283;
+.nnav {
+    background-color: #efe4d283;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.nnav .nav-link{
+.nnav .nav-link {
     color: var(--color-btn) !important;
     font-size: 1.1rem;
     font-weight: bold;
 }
+
 .nnav.scrolled {
-  background-color: var(--sec-color);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--sec-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .mnu {
     font-size: x-large;
 }
@@ -97,7 +99,7 @@
     opacity: 0.8;
     margin-top: 17px;
     border-radius: 10px;
-    
+
 }
 
 .dropdown-item {
@@ -131,7 +133,6 @@
     height: 100vh;
     width: 100%;
     object-fit: cover;
-
 }
 
 .carousel-caption-custom {
@@ -149,12 +150,10 @@
     max-width: 80%;
 }
 
-
 .carousel-item {
     position: relative;
     z-index: 0;
 }
-
 
 .modal {
     z-index: 2000000;
@@ -201,7 +200,6 @@ i {
     color: var(--color-btn);
 }
 
-
 .c {
     padding-top: 20px;
     background-color: var(--sec-color);
@@ -210,7 +208,6 @@ i {
 
 .w_color {
     font-weight: bold;
-
     background: var(--two-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -255,7 +252,6 @@ i {
 
 #accordion .card {
     min-width: 300px;
-
     font-size: large;
 }
 
@@ -314,7 +310,6 @@ textarea {
 
 .m_a .card {
     margin: auto;
-    /* width: 350px; */
     max-width: 350px;
     min-width: 300px;
     height: 530px;
@@ -347,7 +342,6 @@ textarea {
     border-radius: 10px;
     transition: 0.7s;
 }
-
 
 .m_a .card::before {
     content: "";
@@ -396,7 +390,6 @@ textarea {
 .person {
     margin: auto;
     position: relative;
-
 }
 
 .person .card {
@@ -441,7 +434,6 @@ textarea {
     position: relative;
 }
 
-
 .person .card .img-c {
     position: absolute;
     z-index: 4000;
@@ -454,14 +446,12 @@ textarea {
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
 .media {
     overflow: hidden;
     border-radius: 24px;
     box-shadow: -1px 15px 30px rgba(90, 159, 219, 0.6);
     margin-bottom: 60px;
     max-height: 500px;
-
 }
 
 .media .media-body {
@@ -475,7 +465,6 @@ textarea {
 .media .media-body .line {
     height: 5px;
     width: 70px;
-
     border-radius: 9px;
     background-color: var(--color-btn);
     transition: 0.6s;
@@ -527,9 +516,6 @@ textarea {
     transform: scale(1.06);
 }
 
-
-
-
 .media .btn-group button i {
     color: #F7F7F7;
 }
@@ -545,7 +531,6 @@ textarea {
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
 .s_media img {
     width: 50%;
     height: 40%;
@@ -626,7 +611,6 @@ textarea {
     font-size: x-large;
     font-weight: bold;
     color: var(--color-btn);
-
 }
 
 .footer a:hover {
@@ -640,6 +624,7 @@ textarea {
     -webkit-text-fill-color: transparent;
 }
 
+/* ////////////////////////////////////////////////////////////////media///////////////////////////////////////////////////////// */
 @media (max-width:500px) {
     .media-body {
         margin: auto !important;
@@ -664,6 +649,7 @@ textarea {
         min-width: 300px;
         transform: scale(0.9);
     }
+
     .media-img-l,
     .media-img-r {
         order: -1;
@@ -701,7 +687,8 @@ textarea {
         box-shadow: 0px 8px 20px rgba(90, 159, 219, 0.5);
         margin: 10px 0;
     }
-    .cards .m_a{
+
+    .cards .m_a {
         transform: scale(0.9);
     }
 }
@@ -709,19 +696,17 @@ textarea {
 @media (max-width: 810px) {
     .m_a .card {
         min-width: 300px;
-
     }
 }
-
 
 @media (max-width: 768px) {
     .icons {
         top: auto;
         align-items: center;
-
         bottom: -15px !important;
-        right: 0 !important;
+        right: -10PX !important;
         flex-direction: row;
+
     }
 
     .icons .nav {
@@ -760,16 +745,17 @@ textarea {
         left: 0;
         margin: 0;
         position: absolute;
-        /* overflow: hidden; */
         width: 100%;
         background-color: rgb(247, 247, 247, 0.6);
         z-index: 1000000;
         padding: 10px;
     }
-    .cards_size{
+
+    .cards_size {
         height: 50vh !important;
     }
-    .cards_size .card-img-top{
+
+    .cards_size .card-img-top {
         height: 35vh !important;
     }
 }
