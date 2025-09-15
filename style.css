@@ -10,15 +10,17 @@
     color: var(--color-btn);
 }
 
-.mn_w{
+.mn_w {
     min-width: 320px;
-    
+
 }
-.l{
+
+.l {
     width: 100%;
     height: 2px;
-    background-color: hsl(0, 0%, 0%,0.4);
+    background-color: hsl(0, 0%, 0%, 0.4);
 }
+
 .c {
     box-shadow: 0 10px 30px hsl(0, 0%, 0%, 0.2);
     margin-bottom: 30px;
@@ -32,35 +34,10 @@
     background-color: var(--color-btn) !important;
     border: none !important;
 }
-.btn:hover{
-    background-color: #346ea1 !important ;
+
+.btn:hover {
+    background-color: #346ea1 !important;
     transform: scale(1.03);
-}
-@media (max-width: 800px) {
-    form .btn {
-        margin-right: 10px;
-    }
-    .t{
-        display: inline;
-        padding: 5px;
-    }
-    .tt{
-        margin: 10px 0;
-    }
-    .inp{
-        background-color: #ffff !important;
-    }
-    .collapse {
-        top: 80px;
-        left: 0;
-        margin: 0;
-        position: absolute;
-        /* overflow: hidden; */
-        width: 100%;
-        background-color:rgb(247, 247, 247,0.6);
-        z-index: 1000000;
-        padding: 10px;
-    }
 }
 
 
@@ -75,7 +52,8 @@
     max-height: 80px;
     z-index: 1000000;
 }
-.mnu{
+
+.mnu {
     font-size: x-large;
 }
 
@@ -83,7 +61,7 @@
     transition: transform 0.9s ease;
 }
 
-.mnu:hover{
+.mnu:hover {
     transform: rotate(90deg);
 }
 
@@ -140,7 +118,7 @@
     height: 100vh;
     width: 100%;
     object-fit: cover;
-    
+
 }
 
 .carousel-caption-custom {
@@ -168,15 +146,17 @@
 .modal {
     z-index: 2000000;
 }
+
 .modal input {
     color: #254D70 !important;
 }
-.modal-header{
+
+.modal-header {
     background-color: var(--color-btn) !important;
     color: #ffff !important;
 }
 
-.modal label{
+.modal label {
     color: var(--color-btn);
 }
 
@@ -198,8 +178,9 @@
     border-radius: 10px 0 0 10px;
     z-index: 9999;
 }
-.icons i:hover{
-        color: #346ea1 !important ;
+
+.icons i:hover {
+    color: #346ea1 !important;
     transform: scale(1.2);
 }
 
@@ -207,27 +188,6 @@ i {
     color: var(--color-btn);
 }
 
-@media (max-width: 768px) {
-    .icons {
-        top: auto;
-        align-items: center;
-        
-        bottom: -15px !important;
-        right: 0 !important;
-        flex-direction: row;
-    }
-
-    .icons .nav {
-        flex-direction: row;
-    }
-
-    .icons .nav-item {
-        margin-right: 10px;
-    }
-    #accordion .card-header{
-        max-height: 500px;
-    }
-}
 
 .c {
     padding-top: 20px;
@@ -253,7 +213,8 @@ i {
     font-weight: bold;
 }
 
-.cc, .c {
+.cc,
+.c {
     margin-bottom: 20px;
     margin-top: 20px;
     min-width: 300px;
@@ -278,11 +239,13 @@ i {
     font-weight: bold;
     margin-top: 30px;
 }
-#accordion .card{
+
+#accordion .card {
     min-width: 300px;
 
     font-size: large;
 }
+
 .bg_color {
     background-color: var(--sec-color);
     padding-bottom: 25px;
@@ -300,7 +263,8 @@ i {
 .bg_color button {
     color: #ffff;
 }
-.sh{
+
+.sh {
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.7) !important;
 }
 
@@ -371,12 +335,6 @@ textarea {
     transition: 0.7s;
 }
 
-@media (max-width: 810px) {
-    .m_a .card {
-        min-width: 300px;
-        
-    }
-}
 
 .m_a .card::before {
     content: "";
@@ -420,6 +378,7 @@ textarea {
     background-position: center;
     margin-top: 40px;
 }
+
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 .person {
     margin: auto;
@@ -469,12 +428,6 @@ textarea {
     position: relative;
 }
 
-@media (max-width: 700px) {
-    .person .card {
-        min-width: 300px;
-    }
-
-}
 
 .person .card .img-c {
     position: absolute;
@@ -509,7 +462,7 @@ textarea {
 .media .media-body .line {
     height: 5px;
     width: 70px;
-    
+
     border-radius: 9px;
     background-color: var(--color-btn);
     transition: 0.6s;
@@ -556,56 +509,12 @@ textarea {
     transition: 0.8s;
     min-height: 300px;
 }
+
 .media:hover img {
     transform: scale(1.06);
 }
 
-@media (max-width: 810px) {
-    .media {
-        display: flex;
-        flex-direction: column !important;
-        text-align: center;
-        overflow-y: auto;
-        max-height: 100vh;
-        min-width: 300px;
-    }
 
-    .media-img-l,
-    .media-img-r {
-        order: -1;
-        width: 100% !important;
-        clip-path: none !important;
-        height: 230px;
-    }
-    .media .line{
-        margin: auto;
-        margin-bottom: 10px;
-    }
-    .media_l img,
-    .media_r img {
-        width: 100% !important;
-        height: auto !important;
-        clip-path: none !important;
-        object-fit: cover;
-        height: 600px;
-    }
-
-    .media-body {
-        padding: 15px;
-        height: auto;
-        overflow-y: auto;
-        max-width: 290px; 
-    }
-}
-
-@media (max-width:500px) {
-    .media-body {
-        margin:auto !important;
-    }
-    .media .line {
-        margin: auto;
-    }
-}
 
 
 .media .btn-group button i {
@@ -660,52 +569,186 @@ textarea {
 
 .s_media .d .link:hover {
     text-shadow:
-    1px 1px 0 #ccc,
-    2px 2px 0 #bbb,
-    3px 3px 0 #aaa;
+        1px 1px 0 #ccc,
+        2px 2px 0 #bbb,
+        3px 3px 0 #aaa;
     transform: scale(1.2);
 }
+
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.footer .row .d{
+.footer .row .d {
     margin: auto;
 }
-.footer img{
+
+.footer img {
     height: 100px;
     width: 100px;
     border-radius: 50px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-    margin: 10px 0;    
+    margin: 10px 0;
 }
-.footer{
+
+.footer {
     background-color: var(--main-color);
     color: #ffff;
 }
-.footer .d{
+
+.footer .d {
     border-top: 1px solid #ffff;
-    border-bottom: 1px solid #ffff ;
+    border-bottom: 1px solid #ffff;
 }
-.footer .row_md{
-    border-bottom: 1px solid #ffff ;
+
+.footer .row_md {
+    border-bottom: 1px solid #ffff;
 }
-.footer a{
+
+.footer a {
     text-decoration: none;
     color: #ffff;
 }
-.footer .last{
-    border-bottom: 1px solid #ffff ;
+
+.footer .last {
+    border-bottom: 1px solid #ffff;
+    border-top: 1px solid #ffff;
     font-size: x-large;
     font-weight: bold;
     color: var(--color-btn);
+
 }
 
-.footer a:hover{
+.footer a:hover {
     text-decoration: underline;
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
 }
 
-
-.nav-egypt{
+.nav-egypt {
     background: linear-gradient(to top, #1a72f7, #ff5a5a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media (max-width:500px) {
+    .media-body {
+        margin: auto !important;
+    }
+
+    .media .line {
+        margin: auto;
+    }
+
+    .footer .d {
+        border-bottom: 0px solid #ffff;
+
+    }
+}
+
+@media (max-width: 810px) {
+    .media {
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+        overflow-y: auto;
+        max-height: 100vh;
+        min-width: 300px;
+    }
+
+    .media-img-l,
+    .media-img-r {
+        order: -1;
+        width: 100% !important;
+        clip-path: none !important;
+        height: 230px;
+    }
+
+    .media .line {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .media_l img,
+    .media_r img {
+        width: 100% !important;
+        height: auto !important;
+        clip-path: none !important;
+        object-fit: cover;
+        height: 600px;
+    }
+
+    .media-body {
+        padding: 15px;
+        height: auto;
+        overflow-y: auto;
+        max-width: 290px;
+    }
+}
+
+@media (max-width: 700px) {
+    .person .card {
+        min-width: 300px;
+        transform: scale(0.9);
+        box-shadow: 0px 8px 20px rgba(90, 159, 219, 0.5);
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 810px) {
+    .m_a .card {
+        min-width: 300px;
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .icons {
+        top: auto;
+        align-items: center;
+
+        bottom: -15px !important;
+        right: 0 !important;
+        flex-direction: row;
+    }
+
+    .icons .nav {
+        flex-direction: row;
+    }
+
+    .icons .nav-item {
+        margin-right: 10px;
+    }
+
+    #accordion .card-header {
+        max-height: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    form .btn {
+        margin-right: 10px;
+    }
+
+    .t {
+        display: inline;
+        padding: 5px;
+    }
+
+    .tt {
+        margin: 10px 0;
+    }
+
+    .inp {
+        background-color: #ffff !important;
+    }
+
+    .collapse {
+        top: 80px;
+        left: 0;
+        margin: 0;
+        position: absolute;
+        /* overflow: hidden; */
+        width: 100%;
+        background-color: rgb(247, 247, 247, 0.6);
+        z-index: 1000000;
+        padding: 10px;
+    }
 }
